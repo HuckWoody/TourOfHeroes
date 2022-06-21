@@ -1,4 +1,8 @@
 /* HeroesComponent's private CSS styles */
+.bodyClass {
+  text-align: center;
+}
+
 .heroes {
     margin: 0 0 2em 0;
     list-style-type: none;
@@ -8,6 +12,8 @@
   
   .heroes li {
     display: flex;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   .heroes button {
