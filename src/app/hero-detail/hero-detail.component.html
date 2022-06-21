@@ -1,10 +1,26 @@
 <div *ngIf="hero">
     <h2>{{hero.name | uppercase}} Details</h2>
-    <div>id: {{hero.id}}</div>
+    <div>
+        <label for="hero-endDate">End Date: </label>
+        <input id="hero-endDate" [(ngModel)]="hero.endDate" placeholder="MM/DD/YYYY">
+    </div>
+    <br>
+    <div>ID: {{hero.id}}</div>
+    <br>
     <div>
         <label for="hero-name">Hero Name: </label>
         <input id="hero-name" [(ngModel)]="hero.name" placeholder="name">
     </div>
+    <br>
+    <div>
+        <label for="hero-power">Hero Power: </label>
+        <input id="hero-power" [(ngModel)]="hero.power" placeholder="Power">
+    </div>
 </div>
-<button type="button" (click)="save()">save</button>
-<button type="button" (click)="goBack()">go back</button>
+<br>
+
+<br>
+<button mat-raised-button (click)="save()">save</button>
+<button mat-raised-button (click)="goBack()">go back</button>
+<br>
+<br>

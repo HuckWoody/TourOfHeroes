@@ -60,6 +60,10 @@
     margin-right: .8em;
     border-radius: 4px 0 0 4px;
   }
+
+  .heroes .retired {
+    background-color: red;
+  }
   
   .heroes .name {
     align-self: center;
