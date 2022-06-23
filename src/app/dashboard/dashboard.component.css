@@ -48,3 +48,7 @@ h2 {
   a:hover {
     background-color: #000;
   }
+
+  app-hero-search {
+    text-align: center;
+  }
