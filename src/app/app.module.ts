@@ -14,6 +14,7 @@ import { InMemoryDataService } from './in-memory-data.service';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
 import {MatButtonModule} from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import {MatInputModule} from '@angular/material/input';
       InMemoryDataService, { dataEncapsulation: false }
     ),
     MatButtonModule,
-    MatInputModule
+    MatInputModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -14,4 +14,8 @@ export class AppComponent {
   goToDboard() {
     this.router.navigateByUrl("/dashboard");
   };
+
+  goToHeroes() {
+    this.router.navigateByUrl("/heroes");
+  };
 }

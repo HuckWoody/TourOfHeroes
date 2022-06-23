@@ -10,12 +10,15 @@
     </li>
 </ul>
 
-<div>
-    <label for="new-hero">Hero name: </label>
-    <input id="new-hero" #heroName />
-  
+<div class="heroAdd">
+    <div class="heroInputForm">
+        <input type="text" class="heroInput" id="heroname" placeholder="Hero Name" required="" #heroName />
+        <label for="heroname" class="heroLabel">Hero Name</label>
+        <!-- <label for="new-hero">Hero name: </label>
+        <input matInput id="new-hero" #heroName /> -->
+    </div>
     <!-- (click) passes input value to add() and then clears the input -->
-    <button type="button" class="add-button" (click)="add(heroName.value); heroName.value=''">
+    <button mat-raised-button class="add-button" (click)="add(heroName.value); heroName.value=''">
       Add hero
     </button>
 </div>
